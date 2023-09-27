@@ -1,0 +1,73 @@
+:root {
+  --color-dark: #053B50;
+  --color-dark-light: #176B87;
+  --color-light-dark: #93d2ce;
+  --color-light: #EEEEEE;
+  --color-del-button: rgb(245, 30, 30);
+  --color-del-button-hover: rgb(185, 29, 29);
+  --color-add-button: var(--color-light-dark);
+  --color-add-button-hover: var(--color-dark-light);
+}
+
+.hand-pointer {
+  cursor: pointer;
+}
+
+body {
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  background-image: url("https://www.transparenttextures.com/patterns/60-lines.png");
+}
+
+
+.item-checkbox:checked {
+  background-color: inherit;
+  border-color: var(--color-light)
+}
+.item-checkbox:focus {
+  border-color: var(--color-light-dark);
+  box-shadow: 0 0 0 0.15rem var(--color-light-dark);
+}
+
+.item-unchecked {
+  background-color: var(--color-light-dark);
+  border: 1px solid var(--color-dark-light);
+}
+.item-checked {
+  background-color: inherit;
+  border: 1px solid var(--color-light);
+  color: var(--color-dark-light);
+  text-decoration: line-through;
+}
+
+.new-item, .new-item:focus {
+  /* background-color: var(--color-light); */
+  color: var(--color-dark)
+}
+.new-item:focus {
+  border-color: var(--color-light-dark);
+  box-shadow: 0 0 0 0.15rem var(--color-light-dark);
+}
+
+.btn-add {
+  background-color: var(--color-add-button);
+  border-color: var(--color-add-button);
+  color: var(--color-dark);
+}
+.btn-add:hover {
+  background-color: var(--color-add-button-hover);
+  border-color: var(--color-add-button-hover);
+  color: var(--color-light);
+}
+
+.btn-del {
+  background-color: var(--color-del-button);
+  border-color: var(--color-del-button);
+  color: var(--color-light);
+}
+.btn-del:hover {
+  background-color: var(--color-del-button-hover);
+  border-color: var(--color-del-button-hover);
+  color: var(--color-light);
+}
+
